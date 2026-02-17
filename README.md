@@ -1,10 +1,10 @@
-# 📦 StockSense — Full Stack Inventory Management System
+# StockSense — Full Stack Inventory Management System
 
 A complete inventory management system built with **React + Vite** (frontend) and **Node.js + Express + MongoDB Atlas** (backend).
 
 ---
 
-## 🗂 Project Structure
+## Project Structure
 
 ```
 stocksense/
@@ -29,7 +29,7 @@ stocksense/
 
 ---
 
-## ⚡ Quick Setup
+## Quick Setup
 
 ### 1. Install Dependencies
 
@@ -60,9 +60,9 @@ npm run seed
 ```
 
 This creates:
-- 👤 Admin user: `admin@stocksense.com` / `admin123`
-- 📦 8 sample products across 3 categories
-- 📋 4 sample orders (mix of sales and purchases)
+- Admin user: `admin@stocksense.com` / `admin123`
+- 8 sample products across 3 categories
+- 4 sample orders (mix of sales and purchases)
 
 ### 4. Run the App
 
@@ -76,7 +76,7 @@ This starts both servers concurrently:
 
 ---
 
-## 🔌 API Reference
+## API Reference
 
 ### Auth
 | Method | Endpoint            | Description        |
@@ -113,19 +113,19 @@ This starts both servers concurrently:
 
 ---
 
-## ✨ Features
+## Features
 
-- 🔐 **JWT Authentication** — login/register with role-based access (admin, manager, viewer)
-- 📦 **Inventory Management** — full CRUD with search, filter by category, stock status badges
-- 🛒 **Orders** — sales and purchase orders with automatic stock deduction/addition on completion
-- 📊 **Dashboard** — live KPIs, sales trend chart, top sellers, pending orders
-- 📈 **Reports** — revenue, gross profit, inventory valuation, category breakdown
-- 🔔 **Stock Alerts** — real-time low stock / out-of-stock alerts with quick restock buttons
-- 🌱 **Seed Script** — one command to populate demo data
+- **JWT Authentication** — login/register with role-based access (admin, manager, viewer)
+- **Inventory Management** — full CRUD with search, filter by category, stock status badges
+- **Orders** — sales and purchase orders with automatic stock deduction/addition on completion
+- **Dashboard** — live KPIs, sales trend chart, top sellers, pending orders
+- **Reports** — revenue, gross profit, inventory valuation, category breakdown
+- **Stock Alerts** — real-time low stock / out-of-stock alerts with quick restock buttons
+- **Seed Script** — one command to populate demo data
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 | Layer     | Technology                        |
 |-----------|-----------------------------------|
