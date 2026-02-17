@@ -74,44 +74,7 @@ This starts both servers concurrently:
 - **Backend API** → http://localhost:5000
 - **Frontend**    → http://localhost:5173
 
----
 
-## API Reference
-
-### Auth
-| Method | Endpoint            | Description        |
-|--------|---------------------|--------------------|
-| POST   | `/api/auth/register`| Register new user  |
-| POST   | `/api/auth/login`   | Login              |
-| GET    | `/api/auth/me`      | Get current user   |
-
-### Products
-| Method | Endpoint                           | Description          |
-|--------|------------------------------------|----------------------|
-| GET    | `/api/products`                    | List all products    |
-| POST   | `/api/products`                    | Create product       |
-| PUT    | `/api/products/:id`                | Update product       |
-| DELETE | `/api/products/:id`                | Delete product       |
-| PATCH  | `/api/products/:id/adjust-stock`   | Adjust stock qty     |
-
-### Orders
-| Method | Endpoint                    | Description           |
-|--------|-----------------------------|-----------------------|
-| GET    | `/api/orders`               | List all orders       |
-| POST   | `/api/orders`               | Create order          |
-| PATCH  | `/api/orders/:id/status`    | Update order status   |
-| DELETE | `/api/orders/:id`           | Delete pending order  |
-
-### Dashboard
-| Method | Endpoint                         | Description             |
-|--------|----------------------------------|-------------------------|
-| GET    | `/api/dashboard/stats`           | KPI summary             |
-| GET    | `/api/dashboard/sales-trend`     | Daily revenue trend     |
-| GET    | `/api/dashboard/category-breakdown` | Category stats       |
-| GET    | `/api/dashboard/top-products`    | Best sellers            |
-| GET    | `/api/dashboard/low-stock`       | Stock alerts            |
-
----
 
 ## Features
 
