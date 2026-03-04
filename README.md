@@ -1,10 +1,10 @@
-# 📦 StockSense — Full Stack Inventory Management System
+# StockSense — Full Stack Inventory Management System
 
 A complete inventory management system built with **React + Vite** (frontend) and **Node.js + Express + MongoDB Atlas** (backend).
 
 ---
 
-## 🗂 Project Structure
+## Project Structure
 
 ```
 stocksense/
@@ -29,7 +29,7 @@ stocksense/
 
 ---
 
-## ⚡ Quick Setup
+## Quick Setup
 
 ### 1. Install Dependencies
 
@@ -60,9 +60,9 @@ npm run seed
 ```
 
 This creates:
-- 👤 Admin user: `admin@stocksense.com` / `admin123`
-- 📦 8 sample products across 3 categories
-- 📋 4 sample orders (mix of sales and purchases)
+- Admin user: `admin@stocksense.com` / `admin123`
+- 8 sample products across 3 categories
+- 4 sample orders (mix of sales and purchases)
 
 ### 4. Run the App
 
@@ -74,58 +74,21 @@ This starts both servers concurrently:
 - **Backend API** → http://localhost:5000
 - **Frontend**    → http://localhost:5173
 
----
 
-## 🔌 API Reference
 
-### Auth
-| Method | Endpoint            | Description        |
-|--------|---------------------|--------------------|
-| POST   | `/api/auth/register`| Register new user  |
-| POST   | `/api/auth/login`   | Login              |
-| GET    | `/api/auth/me`      | Get current user   |
+## Features
 
-### Products
-| Method | Endpoint                           | Description          |
-|--------|------------------------------------|----------------------|
-| GET    | `/api/products`                    | List all products    |
-| POST   | `/api/products`                    | Create product       |
-| PUT    | `/api/products/:id`                | Update product       |
-| DELETE | `/api/products/:id`                | Delete product       |
-| PATCH  | `/api/products/:id/adjust-stock`   | Adjust stock qty     |
-
-### Orders
-| Method | Endpoint                    | Description           |
-|--------|-----------------------------|-----------------------|
-| GET    | `/api/orders`               | List all orders       |
-| POST   | `/api/orders`               | Create order          |
-| PATCH  | `/api/orders/:id/status`    | Update order status   |
-| DELETE | `/api/orders/:id`           | Delete pending order  |
-
-### Dashboard
-| Method | Endpoint                         | Description             |
-|--------|----------------------------------|-------------------------|
-| GET    | `/api/dashboard/stats`           | KPI summary             |
-| GET    | `/api/dashboard/sales-trend`     | Daily revenue trend     |
-| GET    | `/api/dashboard/category-breakdown` | Category stats       |
-| GET    | `/api/dashboard/top-products`    | Best sellers            |
-| GET    | `/api/dashboard/low-stock`       | Stock alerts            |
+- **JWT Authentication** — login/register with role-based access (admin, manager, viewer)
+- **Inventory Management** — full CRUD with search, filter by category, stock status badges
+- **Orders** — sales and purchase orders with automatic stock deduction/addition on completion
+- **Dashboard** — live KPIs, sales trend chart, top sellers, pending orders
+- **Reports** — revenue, gross profit, inventory valuation, category breakdown
+- **Stock Alerts** — real-time low stock / out-of-stock alerts with quick restock buttons
+- **Seed Script** — one command to populate demo data
 
 ---
 
-## ✨ Features
-
-- 🔐 **JWT Authentication** — login/register with role-based access (admin, manager, viewer)
-- 📦 **Inventory Management** — full CRUD with search, filter by category, stock status badges
-- 🛒 **Orders** — sales and purchase orders with automatic stock deduction/addition on completion
-- 📊 **Dashboard** — live KPIs, sales trend chart, top sellers, pending orders
-- 📈 **Reports** — revenue, gross profit, inventory valuation, category breakdown
-- 🔔 **Stock Alerts** — real-time low stock / out-of-stock alerts with quick restock buttons
-- 🌱 **Seed Script** — one command to populate demo data
-
----
-
-## 🛠 Tech Stack
+## Tech Stack
 
 | Layer     | Technology                        |
 |-----------|-----------------------------------|
@@ -136,3 +99,4 @@ This starts both servers concurrently:
 | Database  | MongoDB Atlas (via Mongoose 8)    |
 | Auth      | JWT + bcryptjs                    |
 | Dev Tools | nodemon, concurrently             |
+
