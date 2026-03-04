@@ -70,10 +70,7 @@ export default function AuthPage() {
           </button>
         </form>
 
-        <div style={{ marginTop: 20, padding: '14px', background: 'var(--surface2)', borderRadius: 8, fontSize: 12, color: 'var(--text3)' }}>
-          <strong style={{ color: 'var(--text2)' }}>Demo credentials:</strong><br />
-          admin@stocksense.com / admin123
-        </div>
+        
       </div>
     </div>
   )
